@@ -9,4 +9,5 @@
 
 ## 연락처
 - 이메일: nicewjdqls@naver.com
-# Shopping_back
+# 데이터베이스 구성
+![설명 텍스트](https://github.com/nicewjdqls/Shopping_back/blob/main/images/database.png?raw=true)
