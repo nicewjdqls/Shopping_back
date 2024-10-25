@@ -18,7 +18,8 @@ usercontroller.createUser = async (req, res) => {
         res.status(200).json({status : "success"});
         console.log("hash : ", hash);
     }catch(error){
-        res.status(400).json({stauts : "fail", error : error.message});
+        res.status(400).json({status : "fail", error : error.message});
+
     }
     
 };
