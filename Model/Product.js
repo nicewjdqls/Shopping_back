@@ -27,7 +27,7 @@ const productSchema = Schema({
         required : true
     },
     stock : {
-        type : object,
+        type : Object,
         required : true
     },
     status : {
