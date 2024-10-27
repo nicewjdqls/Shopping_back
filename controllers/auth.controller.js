@@ -11,13 +11,13 @@ authController.loginWithEmail = async (req, res) => {
         if (user) {
             const isMatch = await bcryptjs.compare(password, user.password);             
             if (isMatch) {
-                const token = user.generateToken();
+                const token = await user.generateToken();
                 return res.status(200).json({ status: "success", user, token });
             }
         }
         throw new Error("아이디 또는 비밀번호가 일치하지 않습니다.");
     } catch (error) {
-        res.status(400).json({ status: "fail2", message: error.message });
+        res.status(400).json({ status: "fail2", error: error.message });
     }
 };
 
